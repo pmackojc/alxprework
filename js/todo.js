@@ -3,6 +3,7 @@ const todoInput = document.querySelector('#todoItem');
 const todoList = document.querySelector('#todoList');
 const clearTodos = document.querySelector('#clearTodos');
 
+
 const validateForm = () => {
   return todoInput.value.length > 2;
 }
@@ -12,6 +13,7 @@ const addTodo = (event) => {
 
   const isValid = validateForm();
   if(!isValid) return;
+
 
   todoList.innerHTML = todoList.innerHTML + `
     <li>
